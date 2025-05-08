@@ -120,7 +120,7 @@ form {
    border: 1px solid #ccc;
    border-radius: 5px;
    padding: 12px;
-   text-align: center;   
+   text-align: center;
    font-family: emoji;
    font-size: 16px;
    font-weight: bold;
@@ -157,22 +157,77 @@ form {
 
 #seccion_hacemos {
    display: none;
+   /* Se mostrará mediante JavaScript cuando sea activa */
 }
 
 #seccion_somos {
    display: none;
+   /* Se mostrará mediante JavaScript cuando sea activa */
 }
 
 #seccion_compromiso {
    display: none;
+   /* Se mostrará mediante JavaScript cuando sea activa */
 }
 
 #seccion_actualidad {
    display: none;
+   /* Se mostrará mediante JavaScript cuando sea activa */
+   /* /////////////////////////// */
+   /* width: 100%;
+   height: 100%;
+   overflow-y: auto;
+   padding: 10px; */
 }
+
+#seccion_actualidad .article-edar {   
+   height: auto;
+   padding: 10px;
+   margin: 0;
+   scrollbar-width: none;
+}
+
+#seccion_actualidad ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+#seccion_actualidad li {
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 8px;
+}
+
+#seccion_actualidad figure {
+   margin: 10px 0;
+   width: 100%;   
+}
+
+#seccion_actualidad iframe {
+   width: 100%;
+   /* height: 100;  */
+   /* Altura fija para móviles */
+   border: none;
+   margin-bottom: 10px;
+   /* overflow-x: auto; */
+}
+
+/* #atras_actualidad {
+   margin-bottom: 15px;
+   padding: 10px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+} */
+
+/* ////////////////////// */
 
 #seccion_contacto {
    display: none;
+   /* Se mostrará mediante JavaScript cuando sea activa */
 }
 
 #seccion_registrarse {
@@ -268,7 +323,7 @@ form {
       /* Cambia el puntero al pasar sobre el elemento */
       transition: transform 0.3s ease, color 0.3s ease;
       /* Transición suave */
-      
+
    }
 
 
