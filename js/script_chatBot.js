@@ -1,6 +1,13 @@
+/**
+ * Chatbot script for Botpress
+ */
 window.botpress.on("webchat:ready", () => {
     window.botpress.open();
 });
+
+/**
+ * Función para abrir el chatbot al hacer clic en el botón
+ */
 window.botpress.init({
     "botId": "53cb9aaf-049c-4e84-8d35-ca4c9ef5d304",
     "configuration": {
