@@ -66,6 +66,7 @@ form {
    /* Sombra */
    /* border-bottom: 2px solid #007BFF;
    padding-bottom: 10px; */
+   font-family: cursive;
 
 }
 
@@ -119,7 +120,7 @@ form {
    border: 1px solid #ccc;
    border-radius: 5px;
    padding: 12px;
-   text-align: center;
+   text-align: center;   
    font-family: emoji;
    font-size: 16px;
    font-weight: bold;
@@ -267,6 +268,7 @@ form {
       /* Cambia el puntero al pasar sobre el elemento */
       transition: transform 0.3s ease, color 0.3s ease;
       /* Transición suave */
+      
    }
 
 
