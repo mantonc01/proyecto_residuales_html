@@ -732,7 +732,7 @@ form {
       /* Oculta el contenido que se desborda */
       width: 100%;
       /* Ancho del contenedor */
-      padding-top: 56.25%;
+      /* padding-top: 56.25%; */
       /* Relación de aspecto 16:9 (alto basado en el ancho) */
    }
 
@@ -747,6 +747,8 @@ form {
       /* Ancho del iframe */
       height: 100%;
       /* Altura del iframe */
+      border: 0;
+      /* Sin borde */
    }
 }
 
