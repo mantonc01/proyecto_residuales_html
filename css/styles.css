@@ -120,6 +120,7 @@ form {
    /* padding-bottom: 10px; /* Espaciado inferior (comentado) */
    font-family: cursive;
    /* Cambia la fuente a cursiva */
+   z-index: 10;
 }
 
 /* ==================================================
@@ -178,6 +179,22 @@ form {
    height: 100%;
    /* Altura del iframe del mapa */
 }
+
+/* .map-container {
+   position: relative;
+   width: 100%;
+} */
+
+/* .map-title {
+   
+   top: 10px;
+   left: 10px;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 5px 10px;
+   border-radius: 4px;
+   font-weight: bold;
+   z-index: 1000; 
+} */
 
 /* ==================================================
      MENÚ (.menu)
@@ -560,6 +577,13 @@ form {
       transform: scaleY(1.2);
       /* Escala verticalmente el mapa al pasar el ratón */
    }
+
+   /* .map-title {
+      position: absolute;
+      top: 60px;
+      left: 100px;
+      
+   } */
 
    /* ==================================================
             BOTONES (.menu-botones y .menu .button)
