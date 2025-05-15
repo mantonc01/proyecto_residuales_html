@@ -247,7 +247,8 @@ form {
 .footer {
    grid-area: footer;
    /* Define el área de la cuadrícula para el pie de página */
-   display: grid;
+   display: none;
+   /* display: grid; */
    /* Utiliza Grid Layout para la estructura del pie de página */
    justify-content: center;
    /* Centra horizontalmente el contenido del pie de página */
@@ -613,6 +614,7 @@ form {
             PIE DE PÁGINA (.footer)
             ================================================== */
    .footer {
+      display: grid;
       height: 20px;
       /* Reduce la altura del pie de página */
    }
