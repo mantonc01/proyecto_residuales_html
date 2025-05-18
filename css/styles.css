@@ -17,6 +17,16 @@
    /* Incluye el padding y el border en el cálculo del ancho y alto de los elementos */
 }
 
+html{
+   /* height: -webkit-fill-available; */
+}
+
+main{
+   /* position: fixed;
+    top: 330px;
+    height: -webkit-fill-available; */
+}
+
 /* ==================================================
      CUERPO (body)
      ================================================== */
@@ -37,6 +47,9 @@ body {
    /* width: 400px; /* Ancho específico para simular un dispositivo móvil (comentado) */
    height: 660px;
    /* Altura específica para simular un dispositivo móvil */
+
+   /* height: -webkit-fill-available; */
+
    /* Define las áreas con nombre para la cuadrícula principal */
    grid-template-areas: "header"
       "section"
@@ -144,6 +157,7 @@ form {
    /* Define el área de la cuadrícula para la sección principal */
    display: grid;
    /* Utiliza Grid Layout para la estructura de la sección */
+   height: max-content;
 }
 
 /* ==================================================
@@ -180,21 +194,6 @@ form {
    /* Altura del iframe del mapa */
 }
 
-/* .map-container {
-   position: relative;
-   width: 100%;
-} */
-
-/* .map-title {
-   
-   top: 10px;
-   left: 10px;
-   background-color: rgba(255, 255, 255, 0.8);
-   padding: 5px 10px;
-   border-radius: 4px;
-   font-weight: bold;
-   z-index: 1000; 
-} */
 
 /* ==================================================
      MENÚ (.menu)
@@ -269,6 +268,10 @@ form {
    /* Utiliza Grid Layout para la estructura del pie de página */
    justify-content: center;
    /* Centra horizontalmente el contenido del pie de página */
+
+   /* position: fixed;
+    bottom: 5px;
+    justify-self: center; */
 }
 
 /* ==================================================
@@ -414,7 +417,7 @@ form {
    color: #333;
    /* Color del texto de los artículos */
    /* Establece una altura máxima */
-   max-height: 230px;
+   max-height: 500px;
    /* Agrega la barra de desplazamiento vertical si se desborda */
    overflow-y: auto;
 }
