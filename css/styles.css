@@ -207,6 +207,7 @@ form {
    /* Espaciado interno del menú */
    gap: 10px;
    /* Espacio entre los elementos del menú */
+   max-height: 500px;
 }
 
 /* ==================================================

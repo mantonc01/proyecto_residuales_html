@@ -13,7 +13,8 @@ let imageList = [
     'images/edar7.jpg',
     'images/edar8.jpg',
     'images/edar9.jpg',
-    'images/edar10.jpg'
+    'images/edar10.jpg',
+    // 'https://drive.google.com/uc?export=view&id=edar15.jpg',
 ];
 
 

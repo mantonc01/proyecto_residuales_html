@@ -130,6 +130,20 @@ btnContacto.addEventListener("click", () => {
     mostrarSeccion(seccionContacto);
 });
 
+/**
+ * Funcionalidad para el botón "CERRAR PESTAÑA"
+ * @type {HTMLElement}
+ */
+document.getElementById("exit-page").addEventListener("click", () => {
+    if (window.opener || window.history.length <= 1) {
+        // Si la pestaña fue abierta por otro script o es la única en el historial
+        window.close(); // Cierra la pestaña
+    } else {
+        // Si no se puede cerrar, redirige a una página de salida o muestra un mensaje
+        window.location.href = "https://www.google.com"; // Ejemplo: redirigir a Google
+    }
+});
+
 // Funcionalidad para el botón "REGISTRARSE"
 // btnRegistrarse.addEventListener("click", () => {
 //     mostrarSeccion(seccionRegistrarse);
