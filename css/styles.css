@@ -479,6 +479,19 @@ form {
    /* Espaciado interno del formulario */
 }
 
+/*===================================================
+     Texto alternativo para la sección "Quiénes Somos"
+     (ID #alternativo_somos)
+     ================================================== */
+#alternativo_somos {
+   display: none;
+   /* display: block; */
+   /* color: red; */
+   font-family: sans-serif;
+   padding: 20px;
+}
+
+
 /* ==================================================
      MEDIA QUERIES PARA TABLET Y PC (ancho mínimo de 400px)
      ================================================== */
