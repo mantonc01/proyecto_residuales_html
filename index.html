@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Script al chatbot de botpress-->
     <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
-    <!-- <script src="https://files.bpcontent.cloud/2025/04/30/17/20250430172207-U2XJZGTU.js"></script> -->
+    <!-- Bootstrap JS (con Popper.js incluido) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script_alternativo.js"></script>
     <title>EDAR</title>
 </head>
 
@@ -29,7 +31,6 @@
         <script src="js/script_title.js"></script>
         <!-- Mapa -->
         <article class="map">
-            <!-- <div class="map-title">Mapa de ubicaciones de las EDAR,s.</div> -->
             <!-- Contenedor para el mapa -->
             <div id="map" alt="Mapa Ubicaciones" class="mapa"></div>
             <!-- Inicializa el mapa -->
@@ -87,21 +88,34 @@
                     </p>
                     <ul>
                         <li>
-                            <strong>Pretratamiento:</strong> En esta etapa inicial, se eliminan los residuos sólidos más
-                            grandes, como plásticos, arenas y grasas, que llegan junto con el agua residual.
+                            <p><strong>Pretratamiento:</strong> En esta etapa inicial, se eliminan los residuos sólidos
+                                más
+                                grandes, como plásticos, arenas y grasas, que llegan junto con el agua residual.
+                            </p>
+                            <p>
+                                <img src="images/cuchara.jpg" alt="Pretratamiento"
+                                    style="width:100%; max-width:500px; margin-top:10px;">
+                            </p>
                         </li>
                         <li>
-                            <strong>Tratamiento primario:</strong> Aquí se sedimentan las partículas sólidas más pesadas
-                            en el fondo, formando lodos que serán tratados posteriormente.
+                            <p><strong>Tratamiento primario:</strong> Aquí se sedimentan las partículas sólidas más
+                                pesadas
+                                en el fondo, formando lodos que serán tratados posteriormente.</p>
+                            <p><img src="images/speco.jpg" alt="Tratamiento primario"
+                                    style="width:100%; max-width:500px; margin-top:10px;"></p>
                         </li>
                         <li>
-                            <strong>Tratamiento secundario:</strong> El agua pasa por procesos biológicos donde
-                            microorganismos descomponen la materia orgánica disuelta, reduciendo la contaminación.
+                            <p><strong>Tratamiento secundario:</strong> El agua pasa por procesos biológicos donde
+                                microorganismos descomponen la materia orgánica disuelta, reduciendo la contaminación.
+                            </p>
+                            <p><img src="images/edar2.jpg" alt="Tratamiento secundario"
+                                    style="width:100%; max-width:500px; margin-top:10px;"></p>
                         </li>
                         <li>
                             <strong>Tratamiento terciario (opcional):</strong> Este paso, que no siempre es necesario,
                             incluye técnicas avanzadas para eliminar nutrientes como nitrógeno o fósforo, así como para
                             desinfectar el agua mediante luz ultravioleta o cloración.
+
                         </li>
                     </ul>
                     <p>
@@ -109,14 +123,16 @@
                         aprovechan los lodos generados para producir biogás (energía renovable) y abonos orgánicos.
                         Algunas incluso reutilizan el agua depurada para riego o usos industriales.
                     </p>
+                    <img src="images/tratamiento_terciario.jpg" alt="Tratamiento terciario"
+                        style="width:100%; max-width:500px; margin-top:10px;">
                     <p>
                         En resumen, las EDAR son fundamentales para garantizar la sostenibilidad hídrica y proteger
                         nuestros recursos naturales, haciendo posible que el agua siga cumpliendo un ciclo seguro y
                         respetuoso con el medio ambiente.
                     </p>
+                    <img src="images/edar10.jpg" alt="sostenibilidad"
+                        style="width:100%; max-width:500px; margin-top:10px;">
                 </article>
-
-                <!-- <button class="button" id="atras_hacemos">ATRÁS</button> -->
             </nav>
         </section>
 
@@ -125,6 +141,7 @@
             <nav class="menu">
                 <button class="button" id="atras_somos">ATRÁS</button>
                 <article class="article-edar">
+                    <!-- Esta parte se muestra si no se puede cargar el iframe-->
                     <div id="alternativo_somos">
                         <h2>¿Qué trabajo realizan las EDAR?</h2>
                         <p>
@@ -174,24 +191,12 @@
                             respetuoso con el medio ambiente.
                         </p>
                     </div>
-
-                    <!-- <iframe 
-            src="https://docs.google.com/document/d/1U-LJB9PDAUmd9_dveNbc9Cg4MN-ilMEZSa682cHgbZE/edit?usp=sharing" 
-            style="width:100%; height:600px; border:none;">
-        </iframe> -->
-
+                    <!-- Iframe cargado donde poder incluir noticias activamente.-->
                     <iframe id="iframe_somos"
                         src="https://docs.google.com/document/d/1U-LJB9PDAUmd9_dveNbc9Cg4MN-ilMEZSa682cHgbZE/preview"
                         style="width:100%; height:600px; border:none;">
                     </iframe>
-
-
-
-
                 </article>
-
-
-
             </nav>
         </section>
 
@@ -208,6 +213,11 @@
                         Nuestro compromiso social se refleja en cada una de nuestras acciones, priorizando la
                         sostenibilidad, la educación ambiental y la mejora continua de nuestras operaciones.
                     </p>
+
+                    <img src="images/compromiso_social.jpg" alt="Compromiso social de EDAR"
+                        style="width:100%; max-width:500px; margin-top:10px;">
+
+
                     <p>
                         Algunas de nuestras iniciativas clave incluyen:
                     </p>
@@ -216,16 +226,24 @@
                             <strong>Educación y Concienciación:</strong> Realizamos talleres y visitas guiadas a
                             nuestras instalaciones para fomentar la conciencia sobre la importancia del tratamiento de
                             aguas residuales y el cuidado del medio ambiente.
+                            <br>
+                            <img src="images/educacion-ambiental.jpg" alt="Talleres educativos en EDAR"
+                                style="width:100%; max-width:500px; margin-top:10px;">
                         </li>
                         <li>
                             <strong>Apoyo a Comunidades Locales:</strong> Trabajamos en colaboración con comunidades y
                             organizaciones para promover el acceso a agua limpia y la gestión adecuada de recursos
                             hídricos.
+                            <br>
+
                         </li>
                         <li>
                             <strong>Reducción de Huella de Carbono:</strong> Implementamos tecnologías sostenibles que
                             minimizan las emisiones de carbono y fomentan la producción de energía renovable mediante el
                             uso de paneles solares.
+                            <br>
+                            <img src="images/edar12.jpg" alt="Paneles solares en instalaciones EDAR"
+                                style="width:100%; max-width:500px; margin-top:10px;">
                         </li>
                         <li>
                             <strong>Cooperación con ayuntamientos:</strong> La gestión eficiente de las Estaciones
@@ -234,6 +252,9 @@
                             el personal técnico de las EDAR y los ayuntamientos resulta no solo conveniente, sino
                             esencial para garantizar un funcionamiento óptimo y una gestión integrada del ciclo del
                             agua.
+                            <br>
+                            <img src="images/cooperacion-ayuntamientos.jpg" alt="Colaboración con ayuntamientos"
+                                style="width:100%; max-width:500px; margin-top:10px;">
                         </li>
                     </ul>
                     <p>
@@ -242,6 +263,7 @@
                         sociedad y el planeta.
                     </p>
                 </article>
+
             </nav>
         </section>
 
@@ -364,10 +386,6 @@
                             <strong>Horario de atención:</strong> Lunes a viernes, de 8:00 a 15:00.
                         </li>
                     </ul>
-                    <!-- <p>
-                        También puedes rellenar nuestro formulario de contacto en línea para consultas específicas.
-                        Nuestro equipo responderá lo antes posible.
-                    </p> -->
                     <h3>Redes sociales</h3>
                     <p>
                         Síguenos en nuestras redes sociales para estar al día con nuestras actividades, eventos y
@@ -394,10 +412,6 @@
                             <a href="https://www.mancomunidadvalledelalagon.es/"
                                 target="_blank">www.mancomunidadvalledelalagon.es</a>
                         </li>
-                        <!-- <li>
-                            <a href="https://cdn.botpress.cloud/webchat/v2.4/shareable.html?configUrl=https://files.bpcontent.cloud/2025/04/30/17/20250430172208-DG1NI4PT.json"
-                                target="_blank">Chat-bot</a>
-                        </li> -->
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-file-word" viewBox="0 0 16 16">
@@ -443,65 +457,6 @@
             </nav>
         </section>
 
-        <section class="section" id="seccion_registrarse">
-            <!-- Menú de opciones -->
-            <nav class="menu">
-                <article class="article-edar" id="formulario">
-                    <h2>Regístrate y Únete a Nuestra Comunidad</h2>
-                    <p>
-                        Formar parte de nuestra comunidad te permitirá estar al tanto de nuestras actividades,
-                        novedades, y eventos relacionados con la sostenibilidad hídrica y el cuidado del medio ambiente.
-                        ¡Registrarte es fácil y rápido!
-                    </p>
-                    <h3>Beneficios de registrarte:</h3>
-                    <ul>
-                        <li>Recibe boletines informativos con actualizaciones sobre nuestras iniciativas y proyectos.
-                        </li>
-                        <li>Accede a recursos exclusivos sobre el tratamiento de aguas y sostenibilidad.</li>
-                        <li>Participa en eventos, talleres y actividades especiales organizados por EDARS Valle del
-                            Alagón.</li>
-                        <li>Forma parte de una red de personas comprometidas con el medio ambiente.</li>
-                    </ul>
-                    <h3>Cómo registrarte:</h3>
-                    <ol>
-                        <li>
-                            Haz clic en el botón <strong>"Registrarse"</strong> que encontrarás en el menú principal o
-                            en el enlace al final de esta página.
-                        </li>
-                        <li>
-                            Rellena el formulario con tu información personal, como nombre, correo electrónico y
-                            contraseña.
-                        </li>
-                        <li>
-                            Confirma tu registro a través del correo electrónico que te enviaremos y accede a tu cuenta.
-                        </li>
-                    </ol>
-                    <h3>Formulario de Registro</h3>
-                    <form action="/registro" method="POST" class="form-registrarse">
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
-
-                        <button type="submit" class="button">Registrarse</button>
-                    </form>
-                    <p>
-                        Si ya tienes una cuenta, <a href="/login">inicia sesión aquí</a>.
-                    </p>
-                    <p>
-                        ¡Gracias por unirte a nosotros! Tu compromiso hace la diferencia para un futuro más sostenible.
-                    </p>
-                </article>
-
-
-                <button class="button" id="atras_registrarse">ATRÁS</button>
-            </nav>
-        </section>
-
         <aside class="aside" id="aside_chatBot">
             <!-- Put this on your page BEFORE the script below -->
             <div id="webchat" style="width: 0px; height: 0px; position: absolute;"></div>
@@ -511,12 +466,15 @@
 
     </main>
 
-    <footer class="footer">
-        <p>© 2025 Edar,s, S.A.|Aviso legal|Uso de cookies</p>
-        <!-- <p>Desarrollado por: <a href="residualesvalledelalagon@gmail.com">EDARS Valle del Alagón</a></p> -->
+    <footer class="footer bg-light text-center py-3">
+        <p>
+            © 2025 Edars, S.A. |
+            <a href="#" title="Información legal del sitio">Aviso legal</a>
+            | Desarrollado por: <strong>EDARS Valle del Alagón</strong>
+        </p>
     </footer>
 
-    <!-- <script src="js/scripts.js"></script> -->
+    <!-- Scripts de la página -->
     <script src="js/script_buttons.js"></script>
     <script src="js/script_images.js"></script>
     <script src="js/script_alternativo.js"></script>

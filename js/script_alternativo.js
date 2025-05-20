@@ -13,3 +13,15 @@ iframe.onerror = function () {
 //         fallback.style.display = "block";
 //     }
 // }, 20000); // Espera 20 segundos antes de mostrar el mensaje
+
+// const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+// const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// Activa los tooltips en toda la página
+
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+//     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+//       new bootstrap.Tooltip(tooltipTriggerEl);
+//     });
+//   });
