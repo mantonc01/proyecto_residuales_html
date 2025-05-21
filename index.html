@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Sitio web oficial de EDAR Valle del Alagón, especializado en el tratamiento de aguas residuales">
     <!-- Enlace de Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -17,22 +19,22 @@
     <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
     <!-- Bootstrap JS (con Popper.js incluido) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/script_alternativo.js"></script> -->
-    <title>EDAR</title>
+    <title>EDAR Valle del Alagón - Depuración de Aguas Residuales</title>
 </head>
 
 <body class="container">
-    <header class="header">
+
+    <header class="header" role="banner">
         <!-- Logo de empresa -->
-        <img src="logos/Logo-Manco-web.png" alt="Logo Empresa" class="logo">
+        <img src="logos/Logo-Manco-web.png" alt="Logo de EDAR Valle del Alagón" class="logo">
         <!-- Título -->
         <h1 class="title" id="titulo">E.D.A.R.,s VALLE DEL ALAGÓN</h1>
         <!-- Funcionalidad del título -->
         <script src="js/script_title.js"></script>
         <!-- Mapa -->
-        <article class="map">
+        <article class="map" aria-label="Mapa de ubicación">
             <!-- Contenedor para el mapa -->
-            <div id="map" alt="Mapa Ubicaciones" class="mapa"></div>
+            <div id="map" alt="Mapa Ubicaciones" class="mapa" aria-label="Mapa interactivo de ubicaciones"></div>
             <!-- Inicializa el mapa -->
             <script src="js/script_map.js"></script>
 
@@ -41,39 +43,36 @@
 
     </header>
 
-    <main>
+    <main id="main-content" role="main">
 
         <!-- Secciones de la página -->
-        <section class="section" id="seccion_inicial">
+        <section class="section" id="seccion_inicial" aria-labelledby="seccion_inicial_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
                 <article class="menu-botones">
-                    <button class="button" id="que_Hacemos">QUE HACEMOS</button>
-                    <button class="button" id="quienes_somos">NOTICIAS</button>
-                    <button class="button" id="compromiso">NUESTRO COMPROMISO</button>
-                    <button class="button" id="actualidad">ACTUALIDAD</button>
-                    <button class="button" id="contacto">CONTACTO</button>
-                    <!-- <button class="button" id="exit-page">SALIR</button> -->
+                    <button class="button" id="que_Hacemos" aria-label="Qué hacemos">QUE HACEMOS</button>
+                    <button class="button" id="quienes_somos" aria-label="Noticias">NOTICIAS</button>
+                    <button class="button" id="compromiso" aria-label="Nuestro compromiso">NUESTRO COMPROMISO</button>
+                    <button class="button" id="actualidad" aria-label="Actualidad">ACTUALIDAD</button>
+                    <button class="button" id="contacto" aria-label="Contacto">CONTACTO</button>
 
-                    <!-- <button class="button" id="registrarse">REGISTRARSE</button> -->
                 </article>
-                <article class="img-edar">
+                <article class="img-edar" aria-label="Galería de imágenes">
                     <div class="carousel-images">
-                        <!-- <img id="carousel-image" src="images/edar1.jpg" alt="Edar 1" class="active"> -->
+                        
                     </div>
-                    <button class="carousel-button left">&lt;</button>
-                    <button class="carousel-button right">&gt;</button>
+                    <button class="carousel-button left" aria-label="Imagen anterior">&lt;</button>
+                    <button class="carousel-button right" aria-label="Imagen siguiente">&gt;</button>
 
                 </article>
 
-                <!-- script para imágenes y botones de imágenes -->
             </nav>
         </section>
 
-        <section class="section" id="seccion_hacemos">
+        <section class="section" id="seccion_hacemos" aria-labelledby="seccion_hacemos_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
-                <button class="button" id="atras_hacemos">ATRÁS</button>
+                <button class="button" id="atras_hacemos" aria-label="atras_hacemos">ATRÁS</button>
                 <article class="article-edar">
                     <h2>¿Qué trabajo realizan las EDAR?</h2>
                     <p>
@@ -136,7 +135,7 @@
             </nav>
         </section>
 
-        <section class="section" id="seccion_somos">
+        <section class="section" id="seccion_somos" aria-labelledby="seccion_somos_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
                 <button class="button" id="atras_somos">ATRÁS</button>
@@ -200,7 +199,7 @@
             </nav>
         </section>
 
-        <section class="section" id="seccion_compromiso">
+        <section class="section" id="seccion_compromiso" aria-labelledby="seccion_compromiso_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
 
@@ -269,7 +268,7 @@
             </nav>
         </section>
 
-        <section class="section" id="seccion_actualidad">
+        <section class="section" id="seccion_actualidad" aria-labelledby="seccion_actualidad_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
                 <button class="button" id="atras_actualidad">ATRÁS</button>
@@ -405,13 +404,13 @@
             </nav>
         </section>
 
-        <section class="section" id="seccion_contacto">
+        <section class="section" id="seccion_contacto" aria-labelledby="seccion_contacto_heading">
             <!-- Menú de opciones -->
             <nav class="menu">
 
                 <button class="button" id="atras_contacto">ATRÁS</button>
                 <article class="article-edar">
-                    <h2>Contacto</h2>
+                    <h2 id="seccion_contacto_heading">Contacto</h2>
                     <p>
                         ¿Tienes alguna pregunta, sugerencia o necesitas más información sobre nuestras EDAR y servicios?
                         Estamos aquí para ayudarte. Puedes ponerte en contacto con nosotros a través de los siguientes
@@ -419,17 +418,17 @@
                     </p>
                     <ul>
                         <li>
-                            <strong>Dirección:</strong> Plaza de España, s/n 10813 Pozuelo de Zarzón, Cáceres, España.
+                            <p><strong>Dirección:</strong> Plaza de España, s/n 10813 Pozuelo de Zarzón, Cáceres, España.</p>
                         </li>
                         <li>
-                            <strong>Teléfono: </strong> 927 44 82 50
+                            <p><strong>Teléfono: </strong> <a href="tel:+34927448250">927 44 82 50</a></p>
                         </li>
                         <li>
-                            <strong>Email:</strong> <a
-                                href="mailto:residualesvalledelalagon@gmail.com">residualesvalledelalagon@gmail.com</a>
+                            <p><strong>Email:</strong> <a
+                                href="mailto:residualesvalledelalagon@gmail.com">residualesvalledelalagon@gmail.com</a></p>
                         </li>
                         <li>
-                            <strong>Horario de atención:</strong> Lunes a viernes, de 8:00 a 15:00.
+                            <p><strong>Horario de atención:</strong> Lunes a viernes, de 8:00 a 15:00.</p>
                         </li>
                     </ul>
                     <h3>Redes sociales</h3>
@@ -437,7 +436,7 @@
                         Síguenos en nuestras redes sociales para estar al día con nuestras actividades, eventos y
                         novedades:
                     </p>
-                    <ul>
+                    <ul class="social-links">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-facebook" viewBox="0 0 16 16">
@@ -445,7 +444,7 @@
                                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                             </svg>
                             <a href="https://www.facebook.com/p/Mancomunidad-Valle-del-Alag%C3%B3n-100063596915785/?locale=es_ES"
-                                target="_blank">www.facebook.com/Mancomunidad-Valle-del-Alagón-</a>
+                                target="_blank" rel="noopener noreferrer"><span class="visually-hidden">Facebook</span></a>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -496,9 +495,9 @@
 
 
                     <div class="container my-5">
-                        <div class="legal-container">
+                        <div class="legal-container" role="region" aria-labelledby="aviso_legal_heading">
                             <br>
-                            <h1 class="text-center mb-4">*********** Aviso Legal *************</h1>
+                            <h1 id="aviso_legal_heading" class="text-center mb-4">*********** Aviso Legal *************</h1>
 
                             <br>
                             <h2>1. Datos Identificativos</h2>
@@ -556,7 +555,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p>© 2025 Edar,s, S.A.| Desarrollado por: <strong>EDARS Valle del Alagón</strong></p>
         <p></p>
     </footer>
