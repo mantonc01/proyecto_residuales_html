@@ -17,15 +17,6 @@
    /* Incluye el padding y el border en el cálculo del ancho y alto de los elementos */
 }
 
-html{
-   /* height: -webkit-fill-available; */
-}
-
-main{
-   /* position: fixed;
-    top: 330px;
-    height: -webkit-fill-available; */
-}
 
 /* ==================================================
      CUERPO (body)
@@ -43,30 +34,16 @@ body {
    background-color: #f4f4f4;
    /* Color de fondo general */
    display: grid;
-   /* Utiliza Grid Layout para la estructura principal */
-   /* width: 400px; /* Ancho específico para simular un dispositivo móvil (comentado) */
+   /* Utiliza Grid Layout para la estructura principal */   
    height: 660px;
    /* Altura específica para simular un dispositivo móvil */
-
-   /* height: -webkit-fill-available; */
-
    /* Define las áreas con nombre para la cuadrícula principal */
    grid-template-areas: "header"
       "section"
       "footer";
 }
 
-/* ==================================================
-     FORMULARIO (form)
-     ================================================== */
-form {
-   display: flex;
-   /* Utiliza Flexbox para la disposición de los elementos del formulario */
-   flex-direction: column;
-   /* Coloca los elementos del formulario en columna */
-   gap: 10px;
-   /* Espacio entre los elementos del formulario */
-}
+
 
 /* ==================================================
      CONTENEDOR PRINCIPAL (.container)
@@ -76,7 +53,7 @@ form {
    /* Define el área de la cuadrícula para el contenedor principal */
    border-radius: 8px;
    /* Bordes redondeados para el contenedor */
-   /* overflow: hidden; /* Oculta el contenido que se desborda (comentado) */
+   
 }
 
 /* ==================================================
@@ -89,7 +66,7 @@ form {
    /* Define el área de la cuadrícula para la cabecera */
    display: grid;
    /* Utiliza Grid Layout para la estructura de la cabecera */
-   /* text-align: center; /* Centra el texto (comentado) */
+  
    /* Define las áreas con nombre para la cuadrícula de la cabecera:
          - "logo" para el logo
          - "title" para el título
@@ -129,8 +106,7 @@ form {
    /* Texto en negrita */
    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
    /* Sombra del texto */
-   /* border-bottom: 2px solid #007BFF; /* Borde inferior (comentado) */
-   /* padding-bottom: 10px; /* Espaciado inferior (comentado) */
+   
    font-family: cursive;
    /* Cambia la fuente a cursiva */
    z-index: 10;
@@ -145,8 +121,7 @@ form {
    width: auto;
    /* Ancho automático para ajustarse al contenido */
    height: 70px;
-   /* Altura del logo, igual a la cabecera */
-   /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra del texto (comentado) */
+   /* Altura del logo, igual a la cabecera */   
 }
 
 /* ==================================================
@@ -265,14 +240,10 @@ form {
    grid-area: footer;
    /* Define el área de la cuadrícula para el pie de página */
    display: none;
-   /* display: grid; */
-   /* Utiliza Grid Layout para la estructura del pie de página */
+   /* Oculta el pie de página por defecto */
    justify-content: center;
    /* Centra horizontalmente el contenido del pie de página */
-
-   /* position: fixed;
-    bottom: 5px;
-    justify-self: center; */
+   
 }
 
 /* ==================================================
@@ -280,7 +251,7 @@ form {
      ================================================== */
 /* Sección inicial (visible por defecto en móvil) */
 #seccion_inicial {
-   /* display: none; /* Ocultar por defecto (comentado) */
+   /* display: none; /* Oculta por defecto (comentado) */
 }
 
 /* Imagen de la EDAR (oculta en móvil) */
@@ -290,10 +261,6 @@ form {
    display: none;
    /* Oculta la imagen en la vista móvil */
 }
-
-/* #seccion_webchat{
-      position: fixed;
-  } */
 
 /* Sección "Qué Hacemos" (oculta por defecto) */
 #seccion_hacemos {
@@ -316,12 +283,7 @@ form {
 /* Sección "Actualidad" (oculta por defecto) */
 #seccion_actualidad {
    display: none;
-   /* Se mostrará mediante JavaScript cuando sea activa */
-   /* /////////////////////////// */
-   /* width: 100%; */
-   /* height: 100%; */
-   /* overflow-y: auto; */
-   /* padding: 10px; */
+   /* Se mostrará mediante JavaScript cuando sea activa */   
 }
 
 /* Estilos para los artículos dentro de la sección "Actualidad" */
@@ -368,26 +330,14 @@ form {
 #seccion_actualidad iframe {
    width: 100%;
    /* Ancho del iframe */
-   /* height: 100; /* Altura fija para móviles (comentado) */
+  
    /* Altura fija para móviles */
    border: none;
    /* Elimina el borde del iframe */
    margin-bottom: 10px;
    /* Margen inferior del iframe */
-   /* overflow-x: auto; */
+  
 }
-
-/* #atras_actualidad {
-      margin-bottom: 15px;
-      padding: 10px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-  } */
-
-/* ////////////////////// */
 
 /* Sección "Contacto" (oculta por defecto) */
 #seccion_contacto {
@@ -398,6 +348,13 @@ form {
 /* Sección "Registrarse" (oculta por defecto) */
 #seccion_registrarse {
    display: none;
+}
+
+/* Estilos para las imagenes dentro de "Que hacemos y Nuestro compromiso" */
+.imagen-hacemos, .imagen-compromiso {
+   width: 100%;
+   max-width: 500px;
+   margin-top: 10px;
 }
 
 /* ==================================================
@@ -471,22 +428,13 @@ form {
    /* Texto en negrita */
 }
 
-/* ==================================================
-     FORMULARIO (ID #formulario)
-     ================================================== */
-#formulario {
-   padding: 30px;
-   /* Espaciado interno del formulario */
-}
 
 /*===================================================
      Texto alternativo para la sección "Quiénes Somos"
      (ID #alternativo_somos)
      ================================================== */
-#alternativo_somos {
-   display: none;
-   /* display: block; */
-   /* color: red; */
+#alternativo_somos {   
+   display: none;   
    font-family: sans-serif;
    padding: 20px;
 }
@@ -595,12 +543,6 @@ form {
       /* Escala verticalmente el mapa al pasar el ratón */
    }
 
-   /* .map-title {
-      position: absolute;
-      top: 60px;
-      left: 100px;
-      
-   } */
 
    /* ==================================================
             BOTONES (.menu-botones y .menu .button)
@@ -644,14 +586,6 @@ form {
    }
 
    /* ==================================================
-            FORMULARIO (form)
-            ================================================== */
-   form {
-      align-items: baseline;
-      /* Alinea los elementos del formulario a la línea base */
-   }
-
-   /* ==================================================
             PIE DE PÁGINA (.footer)
             ================================================== */
    .footer {
@@ -682,8 +616,7 @@ form {
       transition: transform 1s ease;
       /* Transición suave para el desplazamiento de las imágenes */
       width: 100%;
-      /* Ancho del carrusel */
-      /* max-width: 800px; */
+      /* Ancho del carrusel */      
       height: 400px;
       /* Altura del carrusel */
       /* overflow: hidden; */
@@ -775,8 +708,6 @@ form {
       /* Oculta el contenido que se desborda */
       width: 100%;
       /* Ancho del contenedor */
-      /* padding-top: 56.25%; */
-      /* Relación de aspecto 16:9 (alto basado en el ancho) */
    }
 
    .responsive-iframe {
@@ -794,20 +725,3 @@ form {
       /* Sin borde */
    }
 }
-
-/* ==================================================
-        ESTILOS COMENTADOS PARA EL WEBCHAT (si estuviera implementado)
-        ================================================== */
-/*
-     #webchat .bpWebchat {
-         position: unset;
-         width: 100%;
-         height: 100%;
-         max-height: 100%;
-         max-width: 100%;
-     }
-     
-     #webchat .bpFab {
-         display: none;
-     }
-     */

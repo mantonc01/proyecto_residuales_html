@@ -3,7 +3,7 @@
  * Función para inicializar el mapa y agregar marcadores.
  * @returns {void}
  */
-let map = L.map('map').setView([40.083, -6.42], 9);
+const map = L.map('map').setView([40.083, -6.42], 9);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 15,

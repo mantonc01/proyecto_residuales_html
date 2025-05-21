@@ -2,7 +2,7 @@
 /**
  * Función para mostrar una sección y ocultar las demás.
  */
-let titulo = document.getElementById("titulo");
+const titulo = document.getElementById("titulo");
 
 
 /**

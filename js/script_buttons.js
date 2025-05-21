@@ -4,9 +4,6 @@
  */
 let btnQueHacemos = document.getElementById("que_Hacemos");
 
-
-// let btnAtras = document.getElementById("atras");
-
 /**
  * Obtención de referencias al botón "QUIENES SOMOS".
  */
@@ -28,7 +25,7 @@ let btnActualidad = document.getElementById("actualidad");
 let btnContacto = document.getElementById("contacto");
 
 
-// let btnRegistrarse = document.getElementById("registrarse");
+
 
 /**
  * Obtención de referencia a la sección inicial.
@@ -81,7 +78,6 @@ function mostrarSeccion(seccionAMostrar) {
         seccionCompromiso,
         seccionActualidad,
         seccionContacto,
-        // seccionRegistrarse
     ];
     // Oculta todas las secciones
     secciones.forEach(seccion => seccion.style.display = "none");
@@ -130,29 +126,6 @@ btnContacto.addEventListener("click", () => {
     mostrarSeccion(seccionContacto);
 });
 
-/**
- * Funcionalidad para el botón "CERRAR PESTAÑA"
- * @type {HTMLElement}
- */
-// document.getElementById("exit-page").addEventListener("click", () => {
-//     if (window.opener || window.history.length <= 1) {
-//         // Si la pestaña fue abierta por otro script o es la única en el historial
-//         window.close(); // Cierra la pestaña
-//     } else {
-//         // Si no se puede cerrar, redirige a una página de salida o muestra un mensaje
-//         window.location.href = "https://www.google.com"; // Ejemplo: redirigir a Google
-//     }
-// });
-
-// Funcionalidad para el botón "REGISTRARSE"
-// btnRegistrarse.addEventListener("click", () => {
-//     mostrarSeccion(seccionRegistrarse);
-// });
-
-// // Funcionalidad para el botón "ATRÁS" (en cada sección)
-// btnAtras.addEventListener("click", () => {
-//     mostrarSeccion(seccionInicial);
-// });
 
 
 /**
@@ -162,53 +135,4 @@ document.querySelectorAll("[id^='atras_']").forEach(boton => {
     boton.addEventListener("click", () => mostrarSeccion(seccionInicial));
 });
 
-// Botón ATRÁS de "Qué Hacemos"
-// let btnAtrasHacemos = document.getElementById("atras_hacemos");
-// btnAtrasHacemos.addEventListener("click", () => {
-//     seccionHacemos.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
 
-// Botón ATRÁS de "Quiénes Somos"
-// let btnAtrasSomos = document.getElementById("atras_somos");
-// btnAtrasSomos.addEventListener("click", () => {
-//     seccionSomos.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
-
-// Botón ATRÁS de "Compromiso Social"
-// let btnAtrasCompromiso = document.getElementById("atras_compromiso");
-// btnAtrasCompromiso.addEventListener("click", () => {
-//     seccionCompromiso.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
-
-// Botón ATRÁS de "Actualidad"
-// let btnAtrasActualidad = document.getElementById("atras_actualidad");
-// btnAtrasActualidad.addEventListener("click", () => {
-//     seccionActualidad.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
-
-// Botón ATRÁS de "Contacto"
-// let btnAtrasContacto = document.getElementById("atras_contacto");
-// btnAtrasContacto.addEventListener("click", () => {
-//     seccionContacto.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
-
-// Verifica que los botones Atrás existen
-// const botonesAtras = document.querySelectorAll("[id^='atras_']");
-// console.log(`Se encontraron ${botonesAtras.length} botones Atrás`);
-
-// Verifica que las secciones existen
-// console.log("Secciones:", secciones);
-
-// Botón ATRÁS de "Registrarse"
-// let btnAtrasRegistrarse = document.getElementById("atras_registrarse");
-// btnAtrasRegistrarse.addEventListener("click", () => {
-//     seccionRegistrarse.style.display = "none";
-//     seccionInicial.style.display = "block";
-// });
-
-//<!-- Inicializa el mapa -->
